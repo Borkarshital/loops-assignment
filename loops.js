@@ -16,7 +16,7 @@ while (i <= 20) {
 
 //match the point and print steps from given number (60)
 console.log ("match the point and print steps from given number (60)")
-var num = prompt("enter your number")
+var num = +prompt("enter your number")
 do {
     console.log (num);
     num++
