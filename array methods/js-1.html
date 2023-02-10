@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js class</title>
+
+
+
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo_1"></p>
+    <p id="demo_2"></p>
+    <p id="demo_3"></p>
+    <p id="demo_4"></p>
+
+    <script>
+
+        input_array = ["Parker", "Emma", "Warren", "shital", "yhi", "peter"];
+
+        document.getElementById("demo").innerHTML = input_array;
+
+        input_array.pop("peter");
+
+
+        document.getElementById("demo_1").innerHTML = input_array;
+
+
+    </script>
+
+
+
+    <script>
+
+
+
+        input_array = ["Parker", "Emma", "Warren", "shital", "yhi", "peter"];
+
+        input_array.push("Michel");
+
+        document.getElementById("demo_2").innerHTML = input_array;
+
+    </script>
+
+    <script>
+
+        input_array = [10, 20, 40, 60, 80, 100, 6, 5, 4, 3, 2, 1, -2, -100, -40, -70, 17];
+
+        result = input_array.filter(function (x) {
+            if (x < -0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+
+        })
+        document.getElementById("demo_3").innerHTML = result;
+
+    </script>
+    
+    
+    <script>
+          
+        input_array = [2, 3, 4]
+
+        output = input_array.map(function (x) {
+
+            return x * x * x;
+
+
+
+        })
+        document.getElementById("demo_4").innerHTML = output
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+</body>
+
+</html>
